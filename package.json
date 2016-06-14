@@ -4,10 +4,11 @@
   "description": "basic-node-serve",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src/index.js",
+    "prestart": "standard",
+    "start": "nodemon bin/index.js",
     "standard": "standard",
     "pretest": "standard",
-    "test": "mocha --compilers js:babel-register",
+    "test": "mocha test",
     "test:watch": "mocha -w --compilers js:babel-register",
     "test:report": "istanbul cover -f _mocha -- -R spec --compilers js:babel-register"
   },
@@ -31,7 +32,8 @@
     "chai": "^3.4.1",
     "istanbul": "^0.4.1",
     "mocha": "^2.3.4",
-    "precommit-hook": "^3.0.0"
+    "precommit-hook": "^3.0.0",
+    "superagent": "^2.0.0"
   },
   "standard": {
     "ignore": [
