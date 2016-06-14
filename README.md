@@ -3,4 +3,5 @@ basic-node-serve
 
 
 ## running script
-npm run test:single
+`npm run start`
+`npm run test`
