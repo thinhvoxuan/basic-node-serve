@@ -4,8 +4,7 @@
   "description": "basic-node-serve",
   "main": "index.js",
   "scripts": {
-    "prebuild": "rm -rf dist && mkdir dist",
-    "build": "babel src/index.js -o dist/index.js",
+    "start": "nodemon src/index.js",
     "standard": "standard",
     "pretest": "standard",
     "test": "mocha --compilers js:babel-register",
@@ -38,5 +37,8 @@
     "ignore": [
       "test/**/*.js"
     ]
+  },
+  "dependencies": {
+    "express": "^4.13.4"
   }
 }
