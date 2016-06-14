@@ -3,5 +3,6 @@ basic-node-serve
 
 
 ## running script
-`npm run start`
-`npm run test`
+Run serve: `npm run start`
+
+Run test: `npm run test`
