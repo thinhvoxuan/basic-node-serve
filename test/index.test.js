@@ -3,7 +3,7 @@ var request = require('superagent');
 let boot = require('../bin/index').boot
 let shutdown = require('../bin/index').shutdown
 let port = require('../bin/index').port
-const ROOT_PATH = 'http://localhost' + port
+const ROOT_PATH = 'http://localhost:' + port
 describe('basic-node-serve', function () {
   before(function () {
     boot()
