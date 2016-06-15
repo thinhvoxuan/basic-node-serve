@@ -10,7 +10,8 @@
     "pretest": "standard",
     "test": "mocha test",
     "test:watch": "mocha -w --compilers js:babel-register",
-    "test:report": "istanbul cover -f _mocha -- -R spec --compilers js:babel-register"
+    "test:report": "istanbul cover -f _mocha -- -R spec --compilers js:babel-register",
+    "precommit": "npm run standard"
   },
   "repository": {
     "type": "git",
